@@ -1,16 +1,75 @@
-# React + Vite
+# HCI Lab 5B – Three.js Setup and Basic 3D Cube
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This lab demonstrates the basic setup of **Three.js** within a React environment and introduces fundamental concepts of rendering a 3D object. The task focuses on creating a simple animated cube using Three.js to understand how scenes, cameras, and rendering work together.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 Purpose of the Lab
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The main objective of this lab is to:
 
-## Expanding the ESLint configuration
+* Learn how to **install and integrate Three.js** in a project
+* Understand the core components of a 3D scene:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  * Scene
+  * Camera
+  * Renderer
+* Create and render a **basic 3D cube**
+* Implement **animation using a render loop**
+* Practice clean integration of Three.js with **React (using hooks)**
+
+---
+
+## ⚙️ What This Project Does
+
+* Sets up a **Three.js scene**
+* Creates a **perspective camera**
+* Initializes a **WebGL renderer**
+* Adds a **3D cube (BoxGeometry)**
+* Applies a **basic material with color**
+* Animates the cube with continuous **rotation**
+* Properly cleans up resources when the component unmounts
+
+---
+
+## 🧩 Key Concepts Used
+
+* `THREE.Scene()` → Holds all objects in the 3D world
+* `THREE.PerspectiveCamera()` → Defines the viewing perspective
+* `THREE.WebGLRenderer()` → Renders the scene to the browser
+* `THREE.BoxGeometry()` → Creates cube shape
+* `THREE.MeshBasicMaterial()` → Adds color to the cube
+* `requestAnimationFrame()` → Handles smooth animation loop
+* React Hooks:
+
+  * `useEffect` → Lifecycle handling
+  * `useRef` → DOM reference for mounting renderer
+
+---
+
+## 📁 Project Structure
+
+* `Cube.js` → Contains Three.js setup and animation logic
+* `App.js` → Renders the Cube component
+
+---
+
+## 🚀 Outcome
+
+By completing this lab, we gain a foundational understanding of:
+
+* How 3D graphics are rendered in the browser
+* How to integrate **Three.js with React**
+* How animation works in real-time rendering
+
+This serves as a starting point for building more complex 3D applications such as interactive scenes, games, or visual simulations.
+
+---
+
+## 📌 Conclusion
+
+This lab successfully demonstrates the basics of Three.js by creating and animating a 3D cube. It reinforces the understanding of core 3D concepts and provides hands-on experience in combining modern frontend tools with 3D rendering.
+
+---
